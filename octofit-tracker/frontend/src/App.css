@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #2E3192;
+  --secondary-color: #1BFFFF;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --heading-color: #2E3192;
+  --link-color: #2E3192;
+  --link-hover-color: #1BFFFF;
+  --button-bg: #2E3192;
+  --button-hover-bg: #1BFFFF;
+  --table-header-bg: #2E3192;
+  --table-hover-bg: #f0f8ff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Navigation styles */
+.navbar {
+  background-color: white !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  color: var(--primary-color) !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--link-hover-color) !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--button-bg);
+  border-color: var(--button-bg);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--button-hover-bg);
+  border-color: var(--button-hover-bg);
+  color: var(--text-color);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+thead th {
+  background-color: var(--table-header-bg);
+  color: white;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+tbody tr:hover {
+  background-color: var(--table-hover-bg);
+}
+
+td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+/* Container padding */
+.container {
+  padding: 2rem 1rem;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* OctoFit small logo */
+.octo-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.brand-text {
+  margin-left: 6px;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.15rem;
+}
+
+/* Make navbar brand left-justified and responsive */
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
